@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Provider } from 'react-redux'
+import { configureStore } from './redux'
+import OrderBook from './Component/order-book'
+import Ticker from './Component/ticker'
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={configureStore()}>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 box">
+            <Ticker/>
+          </div>
+          <div className="col-md-6 box">
+            <OrderBook/>
+          </div>
+        </div>
+      </div>
+    </Provider>
   );
 }
 

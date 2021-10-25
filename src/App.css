@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+body {
+  background-color:#102331!important;
+  color:#c4c7c9!important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.panel{
+  background-color: #172D3E;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tools{
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.table-col{
+  color:#F0F0f0;
+  padding:1px 10px;
+  flex:1;
+  font:normal 14px Arial;
+  text-align:right;
+}
+
+.box{
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  background-clip:padding-box;
+}
+
+.BitCoinIcon{
+  font-size:38px;
+  width:60px;
+}
+
+.font-700{
+  font-weight: 700;
+}
+
+.font-600{
+  font-weight: 600;
+}
+
+.f-12{
+  font-size: 12px;
+}
+
+.red{
+  color:rgb(165, 29, 29)
+}
+
+.green{
+  color:rgb(12, 134, 28)
+}
+
+.heads{
   display: flex;
-  flex-direction: column;
+  flex-flow: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-bottom: 1px solid #555;
+  height: 30px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
